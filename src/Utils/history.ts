@@ -88,6 +88,12 @@ export const processHistoryMessage = (item: proto.IHistorySync) => {
 		}
 
 		break
+	case proto.HistorySync.HistorySyncType.INITIAL_STATUS_V3:
+		for(const message of item.statusV3Messages!) {
+			messages.push(message)
+		}
+
+		break
 	}
 
 	return {

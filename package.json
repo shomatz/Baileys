@@ -38,8 +38,6 @@
     "lint:fix": "yarn lint --fix",
     "prepack": "tsc",
     "prepare": "tsc",
-    "install": "tsc",
-    "preinstall": "tsc",
     "release": "release-it",
     "test": "jest"
   },
