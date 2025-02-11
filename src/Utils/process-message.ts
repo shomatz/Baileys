@@ -193,7 +193,7 @@ const processMessage = async(
 		switch (protocolMsg.type) {
 		case proto.Message.ProtocolMessage.Type.HISTORY_SYNC_NOTIFICATION:
 			const histNotification = protocolMsg.historySyncNotification!
-			const process = shouldProcessHistoryMsg
+			const process = true
 			const isLatest = !creds.processedHistoryMessages?.length
 
 			logger?.info({
